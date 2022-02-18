@@ -1,2 +1,2 @@
 # instagrambot
-instagram bot
+instagram bot as a personal project
