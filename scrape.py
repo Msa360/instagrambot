@@ -13,13 +13,16 @@ load_dotenv()
 user_name = os.getenv("USERNAME")
 pwd = os.getenv("PASSWORD")
 
+# account to get medias
+acc = "new_fork_city"
+
 # create an instance
 L = instaloader.Instaloader(save_metadata=False, compress_json=False, download_video_thumbnails=False)
 # L.login(user_name, pwd)
 L.load_session_from_file(user_name)
 
 
-posts = Profile.from_username(L.context, "new_fork_city").get_posts()
+posts = Profile.from_username(L.context, acc).get_posts()
 
 e = 0
 for post in takewhile(lambda p: p.date > datetime(2015, 4, 10), dropwhile(lambda p: p.date > datetime(2015, 5, 1), posts)):

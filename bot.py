@@ -75,7 +75,7 @@ class Bot():
 
         # browse media and send it to ig
         browse_btn = self.driver.find_element(By.XPATH, "/html/body/div[8]/div[2]/div/div/div/div[2]/div[1]/form/input")
-        browse_btn.send_keys("/Users/arnaudtremblay/PycharmProjects/igbot/rawscraped/" + media)
+        browse_btn.send_keys("/Users/arnaudtremblay/PycharmProjects/igbot/" + media)
         
 
         # button "continue" while posting
@@ -107,17 +107,3 @@ class Bot():
     
 
 
-
-def main():
-    bot = Bot()
-    bot.login(username=user_name, password=pwd)
-    bot.create_post(media="bestfastfoodclips/test.jpg", description="hello this is another test")
-    time.sleep(30)
-    
-    
-    
-    
-
-
-if __name__ == "__main__":
-    main()
