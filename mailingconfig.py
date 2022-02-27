@@ -35,4 +35,4 @@ def send_mail(sender=sender, receiverslist=receivers, message=email_msg_str):
     smtpObj.quit()
 
 
-send_mail()
+# send_mail()
