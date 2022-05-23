@@ -1,2 +1,2 @@
 # instagrambot
-instagram bot as a personal project
+Instagram bot as a personal project made in Python
